@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 # Cargar modelo y columnas
 modelo = xgb.XGBClassifier()
-modelo.load_model("modelo_xgboost_v4.json")
-features = joblib.load("xgboost_features_v2.pkl")
+modelo.load_model("modelo_xgboost_v5.json")
+features = joblib.load("xgboost_features_v3.pkl")
 
 @app.route("/")
 def home():
